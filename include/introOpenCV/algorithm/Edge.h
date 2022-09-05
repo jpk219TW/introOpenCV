@@ -51,7 +51,7 @@ private:
      */
     void snapData();
 
-    void CannyThreshold(void);
+    void cannyThreshold(void);
 
 private:
     /**
@@ -99,9 +99,8 @@ private:
     int m_CallbackIndex;
 
 private:
-    cv::Mat detected_edges;
+    cv::Mat m_Detected_edges;
     int lowThreshold = 0;
-    const int max_lowThreshold = 100;
     const int ratio = 3;
     const int kernel_size = 3;
     const char *window_name = "Edge Map";
