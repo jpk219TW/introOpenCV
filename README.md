@@ -1,5 +1,5 @@
 
-# twinny_kt_nargo_leader_api
+# introOpenCV tutorial project
 ## Introduction
 This project is a simple practice project for learning the basics of opencv and git
 
