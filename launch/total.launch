@@ -1,0 +1,7 @@
+<!-- -->
+<launch>
+<node pkg="introOpenCV" type="introOpenCV_test" name="aaaaaaa" output="screen">
+</node>
+<node pkg="introOpenCV" type="introOpenCV_ecd" name="vvvvvvvv" output="screen">
+</node> 
+</launch>
