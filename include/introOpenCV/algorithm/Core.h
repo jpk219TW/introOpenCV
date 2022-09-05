@@ -1,3 +1,6 @@
+#ifndef introOpenCV_Core_H
+#define introOpenCV_Core_H
+
 #include <cv_bridge/cv_bridge.h>
 #include <ros/callback_queue.h>
 #include <ros/package.h>
@@ -96,3 +99,5 @@ private:
 
     int m_CallbackIndex;
 };
+
+#endif

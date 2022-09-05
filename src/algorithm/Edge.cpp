@@ -76,8 +76,9 @@ void Edge::snapData()
 void Edge::cannyThreshold(void)
 {
     cv::blur(m_CurrentGrayFrame, m_Detected_edges, cv::Size(3, 3));
-    cv::Canny(m_Detected_edges, m_Detected_edges, lowThreshold, lowThreshold * ratio, kernel_size);
+    cv::Canny(m_Detected_edges, m_Detected_edges, m_LowThreshold, m_LowThreshold * RATIO,
+              KERNEL_SIZE);
     // dst = Scalar::all(0);
     // src.copyTo(dst, m_Detected_edges);
-    // imshow(window_name, dst);
+    // imshow(WINDOW_NAME, dst);
 }

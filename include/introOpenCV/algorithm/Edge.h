@@ -1,3 +1,6 @@
+#ifndef introOpenCV_Edge_H
+#define introOpenCV_Edge_H
+
 #include <cv_bridge/cv_bridge.h>
 #include <ros/callback_queue.h>
 #include <ros/package.h>
@@ -100,8 +103,10 @@ private:
 
 private:
     cv::Mat m_Detected_edges;
-    int lowThreshold = 0;
-    const int ratio = 3;
-    const int kernel_size = 3;
-    const char *window_name = "Edge Map";
+    int m_LowThreshold = 0;
+    const int RATIO = 3;
+    const int KERNEL_SIZE = 3;
+    const char *WINDOW_NAME = "Edge Map";
 };
+
+#endif
